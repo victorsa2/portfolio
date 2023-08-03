@@ -346,11 +346,8 @@ span {
 }
 
 .contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    background: var(--second-bg-color);
+    margin-bottom: 4rem;
+    background: var(--bg-color);
 }
 
 .contact-container {
