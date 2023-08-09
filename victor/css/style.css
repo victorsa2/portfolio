@@ -107,31 +107,17 @@ section {
     width: 32.8rem;
 }
 
-.home-content .text-animate h3 {
-    font-size: 5rem;
+.home-content h3 {
+    font-size: 3.2rem;
     font-weight: 700;
-    color: transparent;
-    -webkit-text-stroke: .7px var(--main-color);
-    background-image: linear-gradient(var(--main-color), var(--main-color));
-    background-repeat: no-repeat;
-    -webkit-background-clip: text;
-    background-clip: text;
-    background-position: -33rem 0;
-    animation: homeBgText 6s linear infinite;
-    animation-delay: 2s;
 }
 
-.home-content .text-animate h3::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    border-right: 2px solid var(--main-color);
-    z-index: -1;
-    animation: homeCursorText 6s linear infinite;
-    animation-delay: 2s;
+span {
+    color: var(--main-color);
+}
+
+.home-content h3:nth-of-type(2) {
+    margin-bottom: 2rem;
 }
 
 .home-content p {
