@@ -29,7 +29,14 @@ window.onscroll = () => {
 
             if (correspondingLink) {
                 correspondingLink.classList.add('active');
-            }
+            };
+
+            // active sections for animartion on scroll
+            sec.classList.add('show-animate');
+        }
+        // if want to use animarion that respeats on scroll use this
+        else {
+            sec.classList.remove('show-animate');
         }
     });
 
@@ -51,4 +58,26 @@ navLinks.forEach(link => {
         });
         link.classList.add('active');
     });
+});
+
+// scroll reveal
+ScrollReveal({
+    reset: true,
+    distance: '80px',
+    duration: 2000,
+    delay: 200
+});
+
+ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
+ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact', { origin: 'buttom' });
+ScrollReveal().reveal('.home-content h1, .about-img, .skills-box, .title', { origin: 'left' });
+ScrollReveal().reveal('.home-content p, .education-column, .about-content', { origin: 'right' });
+
+// typed js
+const typed = new Typed('.multiple-text', {
+    strings: ['BI Analyst', 'Power BI Developer', 'UI/UX Designer'],
+    typeSpeed: 50,
+    backSpeed: 50,
+    backDelay: 1000,
+    loop: true
 });
