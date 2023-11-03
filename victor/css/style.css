@@ -277,7 +277,7 @@ span {
 }
 
 .about-img img {
-    width: 75%;
+    width: 100%;
     border-radius: 50%;
     border: .2rem solid var(--main-color);
 }
@@ -531,10 +531,6 @@ span {
 
 .skills-column:nth-child(2) .skills-content .progress:nth-child(7) .bar span {
     width: 45%;
-}
-
-.skills-column:nth-child(2) .skills-content .progress:nth-child(8) .bar span {
-    width: 40%;
 }
 
 .footer {
